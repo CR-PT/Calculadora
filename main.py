@@ -10,8 +10,9 @@ def calculadora(num1: float, num2: float, operador: str) -> float:
     result = float("nan")
     if operador == '+':
         result = num1 + num2
-    elif operador == '-':
-        result = num1 - num2
+    elif operador == '/' and num2 == 0:
+     raise ZeroDivisionError("Divisão por zero não é permitida.")
+
     elif operador == '*':
         result = num1 * num2
     elif operador == '/':
@@ -37,6 +38,7 @@ if __name__ == "__main__":
             continuar = input('\nDeseja fazer outro cálculo? (s/n): ')
             if continuar.lower() != 's':
                 break
+            
 
 
 
