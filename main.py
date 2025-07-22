@@ -34,6 +34,11 @@ if __name__ == "__main__":
             resultado = calculadora(num1, num2, operador)
             print(f'\nResultado: {resultado}')
 
+            continuar = input('\nDeseja fazer outro cálculo? (s/n): ')
+            if continuar.lower() != 's':
+                break
+
+
 
 
         except ValueError:
