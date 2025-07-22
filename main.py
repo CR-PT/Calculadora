@@ -28,6 +28,12 @@ if __name__ == "__main__":
         try:
             print('Calculadora')
             print('----------------------------------\n')
+            num1 = float(input('Digite o primeiro número: '))
+            num2 = float(input('Digite o segundo número: '))
+            operador = input('Digite a operação (+, -, *, /, **): ')
+            resultado = calculadora(num1, num2, operador)
+            print(f'\nResultado: {resultado}')
+
 
 
         except ValueError:
